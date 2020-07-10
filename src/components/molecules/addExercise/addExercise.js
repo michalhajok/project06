@@ -1,13 +1,13 @@
 import React from 'react'
 
 import Add from '../../atoms/add/add'
+import Exercise from '../exercise'
 
 const AddExercise = ({exercise, add}) => {
     return (
-        <div onClick={()=>add(exercise)}>
-            <p>{exercise.title}</p>
-            <p>{exercise.partMain}</p>
-            <Add />
+        <div className="addPage--exercise" onClick={()=>add(exercise)}>
+            <Exercise exercise={exercise} />
+            <Add size="2" />
         </div>
     )
 }

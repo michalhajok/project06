@@ -18,8 +18,7 @@ function App() {
   const [history, setHistory] = useState([])
 
   return (
-    <div className="App">
-      <Router>
+      <Router className="container">
         <HomePage path="/project06/" />
         <CategoriesMenu path="/project06/categories" categories={categories} />
         <Exercises path="/project06/:category/exercises" />
@@ -27,8 +26,7 @@ function App() {
         <ExerecisePage path="/project06/workout/:id" workout={workout} setWorkout={setWorkout} />
         <AddExercisePage path="/project06/workout/add" workout={workout} categories={categories} setWorkout={setWorkout} />
       </Router>
-    </div>
-  );
+  )
 }
 
 export default App;

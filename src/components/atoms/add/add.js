@@ -6,12 +6,9 @@ import { faPlus} from '@fortawesome/free-solid-svg-icons'
 
 library.add(faPlus)
 
-const Add = () => {
+const Add = ({size}) => {
     return (
-        <div>
-            <p>Add</p>
-            <FontAwesomeIcon icon={faPlus} />     
-        </div>
+            <FontAwesomeIcon className="add--font" size={`${size}x`} icon={faPlus} />     
     )
 }
 

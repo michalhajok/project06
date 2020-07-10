@@ -1,13 +1,15 @@
 import React from 'react'
 
+import Exercise from '../../molecules/exercise'
+
+import './exerciseList.scss'
+
 const ExerciseList = ({exercises}) => {
     return (
-        <div>
+        <div className="exerciseList">
         {
-            exercises.map(({_id, title}) =>(
-            <div key={_id}>
-                {title}
-            </div>
+            exercises.map(exercise =>(
+                <Exercise key={exercise._id} exercise={exercise} />
             ))
         }
         </div>

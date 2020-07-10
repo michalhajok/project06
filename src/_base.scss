@@ -1,0 +1,17 @@
+%flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+%grid-3columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  
+}
+
+$color-berry: #B53471;
+$color-magenta: #6F1E51;
+$color-lavender-tea: #D980FA;
+$color-lavender-rose: #FDA7DF;
+$color-ring: #5758BB;
+$color-aqua: #006266;
+$color-martina: #12CBC4;

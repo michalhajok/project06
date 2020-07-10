@@ -2,18 +2,20 @@ import React from 'react'
 
 import { Link } from '@reach/router'
 
-
-
 import Nav from '../../components/organisms/nav/nav'
-import Exercise from '../../components/organisms/exercise/exercise'
 import Add from '../../components/atoms/add/add'
+import WorkoutExerciseList from '../../components/organisms/workoutExerciseList/workoutExerciseList'
 
-
+import './workoutPage.scss'
 
 const WorkoutPage = ({workout, setWorkout, history, setHistory}) => {
 
+    let isDisabled = workout.length === 0 ? true : false
+
+    let classname = workout.length === 0 ? "inactive--btn" : "active--btn"
+
     const endWorkout = () => {
-        workout.lenght === 0 ?
+        workout.length === 0 ?
             console.log()
             :
             setHistory([...history, workout])
@@ -21,18 +23,14 @@ const WorkoutPage = ({workout, setWorkout, history, setHistory}) => {
     }
 
     return (
-        <div>
-            <Link to="/project06/workout/add">
-                <Add />
-            </Link>
-            <div>
-                {
-                    workout.map((exercise,index)=>(
-                        <Exercise key={exercise._id} exercise={exercise} to={`/project06/workout/${index}`} />
-                    ))
-                }
+        <div className="workoutPage">
+            <div className="workoutPage--bar">
+                <Link to="/project06/workout/add">
+                    <p>Add exercise <Add size="1" /></p>
+                </Link>
+                <button className={classname} onClick={endWorkout} disabled={isDisabled}>End workout</button>
             </div>
-            <button onClick={endWorkout}>End workout</button>
+            <WorkoutExerciseList workout={workout} />
             <Nav />            
         </div>
     )

@@ -1,0 +1,32 @@
+@import '../../../base';
+
+.exercise{
+    flex-basis: 100%;
+    display: flex;
+    padding: 0.5vw;
+    background-color: #FDA7DF;
+
+    figure{
+        width: 6vw;
+        padding: 0.3em;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    article{
+        padding: 1vw;
+    }
+}
+
+@media (max-width: 768px){
+    .exercise{
+        margin: 1em 0;
+
+        figure{
+            width: 15vh;
+            padding: 0.3em;
+        }
+    }
+}

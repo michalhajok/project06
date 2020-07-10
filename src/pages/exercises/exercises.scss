@@ -1,0 +1,10 @@
+@import '../../base';
+
+.exercisesPage{
+    @extend %grid-3columns;
+
+    .exerciseList{
+        grid-column: 2/3;
+        margin-bottom: 3em;
+    }
+}

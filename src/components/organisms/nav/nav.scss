@@ -1,7 +1,9 @@
+@import '../../../base';
+
 nav{
     position: fixed;
     bottom: 0;
-    background-color: blueviolet;
+    background-color: $color-aqua;
     width: 100%;
 
     ul{
@@ -12,8 +14,13 @@ nav{
             padding: 1em;
 
             a{
-                color: white;
+                font-weight: bold;
+                color: $color-lavender-tea;
                 padding: 1em;
+            }
+            a:hover{
+                background-color: $color-lavender-rose;
+                color: $color-aqua;
             }
         }
     }

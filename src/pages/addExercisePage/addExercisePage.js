@@ -5,6 +5,8 @@ import Nav from '../../components/organisms/nav/nav'
 import { filter } from './filters'
 import Category from '../../components/molecules/category/category'
 
+import './add.scss'
+
 const AddExercisePage = ({categories, workout, setWorkout}) => {
 
     const [category, setCategory] = useState("All")
@@ -29,7 +31,7 @@ const AddExercisePage = ({categories, workout, setWorkout}) => {
     }, [fetching])
 
     return (
-        <div>
+        <div className="addPage">
             <div className="filterBar">
               {
                 categories.map(category =>(
@@ -37,7 +39,7 @@ const AddExercisePage = ({categories, workout, setWorkout}) => {
                 ))
               }
             </div>
-            <div>{filter({category, exercises, workout, setWorkout})}</div>
+            <div className="addPage--content">{filter({category, exercises, workout, setWorkout})}</div>
             <Nav />
         </div>
     )

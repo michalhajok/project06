@@ -1,15 +1,15 @@
 import React from 'react'
 
-import { Link } from '@reach/router'
+import CategoryLink from '../../molecules/categoryLink'
+
+import './categoryList.scss'
 
 const CategoryList = ({categories}) => {
     return (
-        <div>
+        <div className="categoryList">
             {
                 categories.map(category =>(
-                    <Link key={category} to={`/project06/${category}/exercises`}>
-                        {category}
-                    </Link>
+                    <CategoryLink key={category} category={category} />
                 ))
             }
         </div>

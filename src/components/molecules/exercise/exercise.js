@@ -1,24 +1,22 @@
 import React from 'react'
 
-import { Link } from '@reach/router'
+import './exercise.scss'
 
-const Exercise = ({exercise, to}) => {
+const Exercise = ({exercise}) => {
 
     const {picture_url, title, partMain, equipment} = exercise
 
     return (
-        <Link  to={to}>
-            <div>
+            <div className="exercise">
                 <figure>
                     <img src={picture_url} alt="foto" />
                 </figure>
                 <article>
                     <p>{title}</p>
-                    <p>{partMain}</p>
-                    <p>{equipment}</p>
+                    <p><b>Category:</b> {partMain}</p>
+                    <p><b>Equipment: </b>{equipment}</p>
                 </article>
             </div>
-        </Link>
     )
 }
 

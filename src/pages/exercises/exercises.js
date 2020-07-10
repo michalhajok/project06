@@ -3,6 +3,9 @@ import React, { useState, useEffect, useCallback } from 'react'
 import { useParams } from '@reach/router'
 import Nav from '../../components/organisms/nav/nav'
 import ExerciseList from '../../components/organisms/exerciseList/exerciseList'
+import Back from '../../components/atoms/back/back'
+
+import './exercises.scss'
 
 const Exercises = () => {
 
@@ -41,10 +44,8 @@ const Exercises = () => {
     }, [fetching])
 
     return (
-        <div>
-          <h3>
-            {_category}
-          </h3>
+        <div className="exercisesPage">
+         <Back /> 
           <ExerciseList exercises={exercises} />
           <Nav />
         </div>

@@ -1,0 +1,12 @@
+@import '../../base';
+
+.categoriesMenu{
+    @extend %grid-3columns;
+    height: 100%;
+
+    .categoryList{
+        align-self: center;
+        grid-column: 2/3;
+    }
+    
+}
