@@ -17,3 +17,13 @@
         }
     }
 }
+
+@media (max-width: 768px){
+
+    .exercisesPage{
+    
+        .exerciseList{
+            grid-column: 1/4;
+        }
+    }
+}

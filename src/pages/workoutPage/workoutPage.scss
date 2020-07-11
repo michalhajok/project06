@@ -40,3 +40,14 @@
         }
     }
 }
+
+@media (max-width: 768px){
+
+    .workoutPage{
+    
+        .workoutPage--list{
+            grid-column: 1/4;
+            margin: 0 1vh;
+        }
+    }
+}
