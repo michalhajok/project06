@@ -2,8 +2,10 @@ import React from 'react'
 
 const Sets = ({ index, weight, quantity, updateSet}) => {
     return (
-        <div>
-            <p>Set {index + 1}</p>
+        <div className="set">
+            <p>
+                <b>Set {index + 1}</b>
+            </p>
             <label>
                 Weight: 
                 <input 

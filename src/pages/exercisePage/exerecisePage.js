@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { memo } from 'react'
 
-import { Link, useParams } from '@reach/router'
+import { useParams } from '@reach/router'
 
 import Nav from '../../components/organisms/nav/nav'
-import Sets from '../../components/molecules/sets/sets'
+import Back from '../../components/atoms/back/back'
+
+import './exercisePage.scss'
+import SetsList from '../../components/organisms/setsList/setsList'
 
 const ExerecisePage = ({workout, setWorkout}) => {
     
@@ -50,22 +53,18 @@ const ExerecisePage = ({workout, setWorkout}) => {
     }
 
     return (
-        <div>
-            <Link to="/project06/workout">Go back</Link>
-            {title}
-            <div>
-                <div>
-                    {
-                        sets.map(({weight, quantity}, index) =>(
-                            <Sets key={`set ${index}`} updateSet={updateSet} index={index} weight={weight} quantity={quantity} />
-                        ))
-                    }
-                </div>
-                <p onClick={addSet}>Add set</p>
+        <div className="exercisePage">
+            <div className="exercisePage--bar">
+                <Back />
+            </div>
+            <div className="content">
+                <h2>{title}</h2>
+                <SetsList sets={sets} updateSet={updateSet} />
+                <button onClick={addSet}>Add set</button>
             </div>
             <Nav />
         </div>
     )
 }
 
-export default ExerecisePage
+export default memo(ExerecisePage)

@@ -45,7 +45,9 @@ const Exercises = () => {
 
     return (
         <div className="exercisesPage">
-         <Back /> 
+          <div className="exercisesPage--bar">
+            <Back /> 
+          </div>
           <ExerciseList exercises={exercises} />
           <Nav />
         </div>

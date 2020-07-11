@@ -3,10 +3,25 @@
 .categoriesMenu{
     @extend %grid-3columns;
     height: 100%;
+    background-color: $color-city-lights;
 
     .categoryList{
         align-self: center;
+        justify-content: center;
         grid-column: 2/3;
+        
+        a{
+            background-color: white;
+            color: black;
+            margin: 2vh;
+            text-align: center;
+            border: 1px solid black;
+        }
+        a:hover{
+            background-color: $color-magenta;
+            color: $color-lavender-rose;
+            font-weight: bold;
+        }
     }
     
 }

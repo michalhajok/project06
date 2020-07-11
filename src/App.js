@@ -12,7 +12,7 @@ import AddExercisePage from './pages/addExercisePage'
 
 function App() {
 
-  const categories = ["All" ,"Chest", "Back", "Shoulder", "Biceps", "Triceps", "Core", "Glutes", "Upper legs", "Calves"]
+  const categories = ["All" ,"Chest", "Back", "Shoulder", "Biceps", "Triceps", "Core", "Glutes", "Legs", "Calves"]
 
   const [workout, setWorkout] = useState([])
   const [history, setHistory] = useState([])

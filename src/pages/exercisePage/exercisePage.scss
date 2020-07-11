@@ -1,0 +1,82 @@
+@import '../../base';
+
+.exercisePage{
+    @extend %grid-3columns;
+
+    .exercisePage--bar{
+        grid-column: 1/4;
+        @extend %bar;
+    }
+
+    .content{
+        grid-column: 2/3;
+        line-height: 200%;
+        margin-bottom: 4em;
+        text-align: center;
+
+        h2{
+            padding: 0.5em;
+        }
+        .set{
+            margin: 0.5vw 0;
+            display: flex;
+            text-align: left;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            padding: 1em;
+            background-color: $color-city-lights;
+
+            label{
+                flex-basis: 100%;
+                padding: 0.3em;
+
+                input{
+                    margin-left: 0.5em;
+                    padding: 0.4em;
+                    text-indent: 30%;
+                    width: 25%;
+                    border: 0;
+                    border-radius: 1em;
+                }
+            }
+
+            label:nth-of-type(1){
+                ::-webkit-outer-spin-button,
+                ::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                }
+            }
+        }
+
+        .set:hover{
+            box-shadow: 0 0 0.2em 0.1em black;
+        }
+
+        button{
+            padding: 0.9em 2em;
+            border: 0;
+            border-radius: 0.5em;
+            font-weight: bold;
+            background-color: $color-energos;
+            color: $color-magenta;
+        }
+
+        button:hover{
+            background-color: $color-android;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .exercisePage{
+    
+        .content{
+            grid-column: 1/4;
+
+            .set{
+                margin: 1vh 1vh;
+            }
+
+        }
+    }
+}

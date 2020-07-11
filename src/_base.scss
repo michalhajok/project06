@@ -1,3 +1,16 @@
+$color-berry: #B53471;
+$color-magenta: #6F1E51;
+$color-lavender-tea: #D980FA;
+$color-lavender-rose: #FDA7DF;
+$color-forgotten: #9980FA;
+$color-ring: #5758BB;
+$color-aqua: #006266;
+$color-martina: #12CBC4;
+$color-red: #EA2027;
+$color-energos: #C4E538;
+$color-city-lights: #dfe4ea;
+$color-android: #A3CB38;
+
 %flex-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -8,10 +21,10 @@
   grid-template-columns: 1fr 1fr 1fr;  
 }
 
-$color-berry: #B53471;
-$color-magenta: #6F1E51;
-$color-lavender-tea: #D980FA;
-$color-lavender-rose: #FDA7DF;
-$color-ring: #5758BB;
-$color-aqua: #006266;
-$color-martina: #12CBC4;
+%bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  background-color: $color-aqua;
+}
+
