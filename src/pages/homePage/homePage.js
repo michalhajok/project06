@@ -13,7 +13,7 @@ const HomePage = () => {
                         App was created in Create-React-App.
                         In React App I used Api, Sass, Mirage JS.
                         Routing was created in Reach Router.
-                        Icons in site is from FontAwesome.
+                        Icons cpme from Font Awesome.
                         Colors in the page you can find on <i>https://flatuicolors.com</i>.
                     </p>
                 </article>
