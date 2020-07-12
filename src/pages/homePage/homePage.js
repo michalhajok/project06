@@ -20,9 +20,9 @@ const HomePage = () => {
                 <article>
                     <h3>About site</h3>
                     <p>
-                        In this page you can create your own workout and save your results. 
-                        Also you can find out which excercise you can do in the gym.
-                        And what equipment you will need to do selected excercise.
+                        In this page you can create your own workout plan and save your results. 
+                        Also, you can find out which exercise you can do in the gym.
+                        And what equipment you will need to do the selected exercises.
                     </p>
                 </article>
             </div>
