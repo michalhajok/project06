@@ -11,7 +11,7 @@ const HomePage = () => {
                 <article>
                     <p>
                         App was created in Create-React-App.
-                        In this React App I used Api, Sass, Mirage JS.
+                        In React App I used Api, Sass, Mirage JS.
                         Routing was created in Reach Router.
                         Icons in site is from FontAwesome.
                         Colors in the page you can find on <i>https://flatuicolors.com</i>.
@@ -22,7 +22,7 @@ const HomePage = () => {
                     <p>
                         In this page you can create your own workout and save your results. 
                         Also you can find out which excercise you can do in the gym.
-                        What is the exercise category and what equipment will you use for the exercise.
+                        And what equipment you will need to do selected excercise.
                     </p>
                 </article>
             </div>
