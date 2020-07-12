@@ -21,7 +21,7 @@ const HomePage = () => {
                     <h3>About site</h3>
                     <p>
                         In this page you can create workout and save your results. 
-                        Also on this site you can know about exercise in gym. 
+                        ALso you can find out which excercise you can do in the gym.
                         What is the exercise category and what equipment will you use for the exercise.
                     </p>
                 </article>
