@@ -14,7 +14,7 @@ const HomePage = () => {
                         In React App I used Api, Sass, Mirage JS.
                         Routing was created in Reach Router.
                         Icons cpme from Font Awesome.
-                        Colors in the page you can find on <i>https://flatuicolors.com</i>.
+                        Colors used in the page you can find on <i>https://flatuicolors.com</i>.
                     </p>
                 </article>
                 <article>
