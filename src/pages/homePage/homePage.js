@@ -10,11 +10,11 @@ const HomePage = () => {
             <div className="content">
                 <article>
                     <p>
-                        App was created in Create-React-App.
-                        In React App I used Api, Sass, Mirage JS.
-                        Routing was created in Reach Router.
-                        Icons come from Font Awesome.
-                        Colors used in the page you can find on <i>https://flatuicolors.com</i>.
+                    Application was created with Create-React-App,
+                     with usage of Api, Sass, Mirage JS.
+                      Routing was created with Reach Router.
+                       All icons used are from Font Awesome.
+                     Colors used in the page can be found at  <i>https://flatuicolors.com</i>.
                     </p>
                 </article>
                 <article>
