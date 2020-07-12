@@ -1,0 +1,32 @@
+@import '../../base';
+
+.homePage{
+    height: 100%;
+    @extend %grid-3columns;
+
+    .content{
+        grid-column: 2/3;
+        align-self: center;
+        
+        article{
+
+            h3{
+                text-align: center;
+            }
+
+            p{
+                font-size: 1.05em;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .homePage{
+        
+        .content{
+            grid-column: 1/4;
+            margin: 0 2vh;
+        }
+    }
+}
